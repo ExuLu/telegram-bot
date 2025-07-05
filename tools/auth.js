@@ -20,13 +20,9 @@ const stringSession = new StringSession(process.env.SESSION || '');
     onError: (err) => console.log('Authorization error:', err),
   });
 
-  console.log('✅ You are successfully on telegram as:', (await client.getMe()).username);
-
   const savedSession = client.session.save();
-  console.log('🧷 Save session to the .env → SESSION=' + savedSession);
 
-  // Отправка тестового сообщения себе
   await client.sendMessage('me', { message: 'Successful authorization! 🎉' });
 
   await client.disconnect();
-})()
+})();
