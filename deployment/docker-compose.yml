@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    image: node:20.19.3-slim
+    container_name: telegram-bot
+    working_dir: /app
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    command: >
+      sh -c "npm install && node scripts/scheduler.js"
