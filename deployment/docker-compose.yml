@@ -4,6 +4,7 @@ services:
   telegram-bot:
     image: node:20.19.3-slim
     container_name: telegram-bot
+    user: "1000:1000"
     working_dir: /app
     restart: unless-stopped
     volumes:
