@@ -34,6 +34,6 @@ jobs:
           key: ${{ secrets.TGBOT_SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /home/ubuntu/telegram-bot
-            docker-compose down
-            docker-compose up -d --build
+            cd /home/ubuntu/telegram-bot/deployment
+            sudo docker compose down
+            sudo docker compose up -d
