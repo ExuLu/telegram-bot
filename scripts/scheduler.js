@@ -26,3 +26,11 @@ cron.schedule(
   },
   { timezone: timeZone }
 );
+
+cron.schedule(
+  '42 17 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
