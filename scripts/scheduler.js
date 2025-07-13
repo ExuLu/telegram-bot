@@ -34,3 +34,11 @@ cron.schedule(
   },
   { timezone: timeZone }
 );
+
+cron.schedule(
+  '19 15 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
