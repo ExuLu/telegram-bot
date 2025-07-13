@@ -52,7 +52,7 @@ cron.schedule(
 );
 
 cron.schedule(
-  '44 19 * * *',
+  '54 19 * * *',
   () => {
     sendScheduledMessage();
   },
