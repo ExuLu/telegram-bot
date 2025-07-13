@@ -39,8 +39,8 @@ async function sendScheduledMessage() {
     }
 
     const currentMsg = messages[state.currentIndex];
-    const text = currentMsg.message || '';
     console.log(currentMsg);
+    const text = currentMsg.message || '';
 
     if (!currentMsg.media) {
       console.log('There is no media in the message');
