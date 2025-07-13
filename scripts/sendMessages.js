@@ -38,8 +38,12 @@ async function sendScheduledMessage() {
       return;
     }
 
+    if (state.currentIndex > messages.length) {
+      state.currentIndex = 1;
+      console.log('Some messages was deleted so the cycle was started over');
+    }
+
     const currentMsg = messages[state.currentIndex];
-    console.log(currentMsg);
     const text = currentMsg.message || '';
 
     if (!currentMsg.media) {
