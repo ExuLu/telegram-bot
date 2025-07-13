@@ -19,6 +19,7 @@ async function sendScheduledMessage() {
   const client = new TelegramClient(stringSession, apiId, apiHash, {
     connectionRetries: 5,
   });
+  console.log('client has started');
 
   try {
     await client.connect();
@@ -39,6 +40,7 @@ async function sendScheduledMessage() {
 
     const currentMsg = messages[state.currentIndex];
     const text = currentMsg.message || '';
+    console.log(currentMsg);
 
     if (!currentMsg.media) {
       console.log('There is no media in the message');
