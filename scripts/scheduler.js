@@ -20,7 +20,7 @@ cron.schedule(
 );
 
 cron.schedule(
-  '26 12 * * *',
+  '48 11 * * *',
   () => {
     sendScheduledMessage();
   },
