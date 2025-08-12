@@ -12,7 +12,7 @@ cron.schedule(
 );
 
 cron.schedule(
-  '18 10 * * *',
+  '34 9 * * *',
   () => {
     sendScheduledMessage();
   },
@@ -20,7 +20,7 @@ cron.schedule(
 );
 
 cron.schedule(
-  '48 11 * * *',
+  '34 10 * * *',
   () => {
     sendScheduledMessage();
   },
@@ -28,7 +28,7 @@ cron.schedule(
 );
 
 cron.schedule(
-  '13 14 * * *',
+  '34 11 * * *',
   () => {
     sendScheduledMessage();
   },
@@ -36,7 +36,7 @@ cron.schedule(
 );
 
 cron.schedule(
-  '14 16 * * *',
+  '34 12 * * *',
   () => {
     sendScheduledMessage();
   },
@@ -44,7 +44,7 @@ cron.schedule(
 );
 
 cron.schedule(
-  '11 18 * * *',
+  '34 13 * * *',
   () => {
     sendScheduledMessage();
   },
@@ -52,7 +52,7 @@ cron.schedule(
 );
 
 cron.schedule(
-  '54 19 * * *',
+  '34 14 * * *',
   () => {
     sendScheduledMessage();
   },
@@ -60,7 +60,71 @@ cron.schedule(
 );
 
 cron.schedule(
-  '02 21 * * *',
+  '34 15 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
+
+cron.schedule(
+  '34 16 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
+
+cron.schedule(
+  '34 17 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
+
+cron.schedule(
+  '34 18 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
+
+cron.schedule(
+  '34 19 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
+
+cron.schedule(
+  '34 20 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
+
+cron.schedule(
+  '34 21 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
+
+cron.schedule(
+  '34 22 * * *',
+  () => {
+    sendScheduledMessage();
+  },
+  { timezone: timeZone }
+);
+
+cron.schedule(
+  '34 23 * * *',
   () => {
     sendScheduledMessage();
   },
